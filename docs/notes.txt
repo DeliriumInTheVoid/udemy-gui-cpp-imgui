@@ -1,0 +1,6 @@
+Section 1: Introduction
+   6. Course Matherial
+      Github Repository: https://github.com/franneck94/UdemyCppGui
+      Useful  Shortcuts in VSCode: https://github.com/franneck94/VSCodeGuide/blob/master/usefulShortcuts.md
+
+Section 2: First introduction to ImGui      

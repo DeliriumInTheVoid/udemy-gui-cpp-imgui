@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 
 project(
-    "ImGuiHelloWorld"
+    "FileExplorer"
     VERSION 1.0.0
     LANGUAGES C CXX)
 
@@ -23,7 +23,9 @@ include(ConfigSafeGuards)
 
 # add_clang_format_target() # needs python
 
-set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../vcpkg)
+set (VCPKG_MANIFEST_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/)
+set (CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)
+set (VCPKG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../vcpkg)
 # you can set any other vcpkg installation on your system
 # set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../../../../../vcpkg)
 include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)

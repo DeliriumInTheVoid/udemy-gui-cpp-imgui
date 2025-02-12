@@ -17,15 +17,19 @@ option(ENABLE_WARNINGS_AS_ERRORS "Enable to treat warnings as errors." OFF)
 option(ENABLE_CLANG_TIDY "Enable to add clang tidy." ON)
 option(ENABLE_CLANG_FORMAT "Enable to add clang-format." ON)
 
+if(APPLE)
+    set(CMAKE_OSX_ARCHITECTURES "x86_64")
+endif()
+
 include(Warnings)
 #  include(Tools) # needs clang tidy and clang format
 include(ConfigSafeGuards)
 
 # add_clang_format_target() # needs python
 
-set (VCPKG_MANIFEST_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/)
-set (CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)
-set (VCPKG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../vcpkg)
+set(VCPKG_MANIFEST_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/)
+set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)
+set(VCPKG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../vcpkg)
 # you can set any other vcpkg installation on your system
 # set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../../../../../vcpkg)
 include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)

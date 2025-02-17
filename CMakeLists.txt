@@ -18,5 +18,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/FileExplorer")
 # add_subdirectory("FileExplorer")
 
-set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/Plotter")
-add_subdirectory("Plotter")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/Plotter")
+# add_subdirectory("Plotter")
+
+set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/TextEditor")
+add_subdirectory("TextEditor")

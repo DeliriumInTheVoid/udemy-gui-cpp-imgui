@@ -15,11 +15,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #set(CMAKE_GENERATOR "NMake Makefiles")
 
-# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/FileExplorer")
-# add_subdirectory("FileExplorer")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/01_FileExplorer")
+# add_subdirectory("01_FileExplorer")
 
-# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/Plotter")
-# add_subdirectory("Plotter")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/02_Plotter")
+# add_subdirectory("02_Plotter")
 
-set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/TextEditor")
-add_subdirectory("TextEditor")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/03_TextEditor")
+# add_subdirectory("03_TextEditor")
+
+set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/04_DiffViewer")
+add_subdirectory("04_DiffViewer")

@@ -24,5 +24,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/03_TextEditor")
 # add_subdirectory("03_TextEditor")
 
-set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/04_DiffViewer")
-add_subdirectory("04_DiffViewer")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/04_DiffViewer")
+# add_subdirectory("04_DiffViewer")
+
+set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/05_Paint")
+add_subdirectory("05_Paint")

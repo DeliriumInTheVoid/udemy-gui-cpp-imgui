@@ -33,5 +33,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/06_Calendar")
 # add_subdirectory("06_Calendar")
 
-set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/07_CsvTool")
-add_subdirectory("07_CsvTool")
+# set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/07_CsvTool")
+# add_subdirectory("07_CsvTool")
+
+set(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/08_WallClock")
+add_subdirectory("08_WallClock")
